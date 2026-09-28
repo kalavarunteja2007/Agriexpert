@@ -1,0 +1,72 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Direct Income Support",
+    "benefit": "₹6,000 per year directly transferred to bank account in 3 equal installments of ₹2,000.",
+    "eligibility": "All landholding farmer families with cultivable land holdings in their names, subject to exclusions.",
+    "documents": "Aadhaar Card, Land Record Details (Khasra/Khatauni), Bank Passbook linked with Aadhaar.",
+    "status": "Active (18th Installment Disbursed)",
+    "portal": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "pmfby",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Crop Insurance",
+    "benefit": "Comprehensive crop loss protection against drought, flood, pests, unseasonal rain. Farmer premium only 1.5% for Rabi, 2% for Kharif, 5% for commercial/horticultural crops.",
+    "eligibility": "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas.",
+    "documents": "Land possession certificate, sowing certificate from Patwari/Gram Sevak, Aadhaar, Bank Details.",
+    "status": "Active (Enrolment open for current season)",
+    "portal": "https://pmfby.gov.in"
+  },
+  {
+    "id": "pmksy_micro_irrigation",
+    "name": "PM Krishi Sinchayee Yojana (Per Drop More Crop)",
+    "category": "Irrigation & Water Tech",
+    "benefit": "Up to 55% subsidy for small/marginal farmers and 45% for other farmers on Drip & Sprinkler irrigation systems.",
+    "eligibility": "Farmers owning agricultural land with an assured water source (borewell/canal/open well).",
+    "documents": "Soil/water test report, land revenue records, identity proof, quotation from empanelled drip supplier.",
+    "status": "Applications Open through State Horticulture Portals",
+    "portal": "https://pmksy.gov.in"
+  },
+  {
+    "id": "soil_health_card",
+    "name": "Soil Health Card Scheme",
+    "category": "Soil Testing & Fertility",
+    "benefit": "Free comprehensive 12-parameter soil testing (N, P, K, S, Zn, Fe, Cu, Mn, Bo, pH, EC, OC) with customized crop-specific fertilizer recommendations.",
+    "eligibility": "All agricultural landowners and cultivators.",
+    "documents": "Basic farmer details, land survey number, soil sample submitted to nearest KVK or Block Agriculture Office.",
+    "status": "Ongoing Cycle across all districts",
+    "portal": "https://soilhealth.dac.gov.in"
+  },
+  {
+    "id": "kisan_credit_card",
+    "name": "Kisan Credit Card (KCC) Scheme",
+    "category": "Low-Interest Credit",
+    "benefit": "Collateral-free credit limit up to ₹1.6 Lakhs (up to ₹3 Lakhs with prompt repayment incentive at effective 4% interest rate per annum).",
+    "eligibility": "Owner cultivators, tenant farmers, oral lessees, Self Help Groups (SHGs) of farmers.",
+    "documents": "Duly filled application form, proof of land cultivation, photo ID, address proof.",
+    "status": "Available at all Commercial, Cooperative & RRB Banks",
+    "portal": "https://agricoop.nic.in"
+  },
+  {
+    "id": "pm_kusum",
+    "name": "PM-KUSUM (Solar Agricultural Pumps)",
+    "category": "Renewable Energy & Solar Pumps",
+    "benefit": "60% direct subsidy (30% Central + 30% State) for standalone solar water pumps and solarizing grid-connected agricultural pumps.",
+    "eligibility": "Individual farmers, groups of farmers, cooperatives, water user associations with farmland needing irrigation pump.",
+    "documents": "Farmland records, Aadhaar card, electricity connection copy (for solarization), bank passbook.",
+    "status": "Active across states via Renewable Energy Agencies (e.g. MEDA, HAREDA, RREC)",
+    "portal": "https://pmkusum.mnre.gov.in"
+  },
+  {
+    "id": "sub_mission_mechanization",
+    "name": "Sub-Mission on Agricultural Mechanization (SMAM)",
+    "category": "Farm Machinery Subsidy",
+    "benefit": "40% to 50% subsidy on purchase of Tractors, Power Tillers, Rotavators, Harvesters, Drone Sprayers, and Laser Land Levellers.",
+    "eligibility": "Farmers of all categories, priority given to small, marginal, SC/ST, and women farmers.",
+    "documents": "Land record, Aadhaar card, caste certificate (if applicable), bank passbook, quotation from authorized dealer.",
+    "status": "Active (DBT Agriculture Portal)",
+    "portal": "https://agrimachinery.nic.in"
+  }
+]

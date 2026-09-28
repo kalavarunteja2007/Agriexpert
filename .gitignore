@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and sensitive keys
+.env
+.env.local
+.env.production
+
+# Uploads directory (user-submitted leaf photos)
+uploads/
+!uploads/.gitkeep
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary files and logs
+*.log
+scratch/
+.system_generated/

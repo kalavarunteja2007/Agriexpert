@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriExpert AI — Intelligent Farm Companion & Digital Agronomy Platform</title>
+  <meta name="description" content="AgriExpert AI is a full-stack smart farming companion. AI crop disease diagnosis, live APMC mandi prices, soil health NPK dosage calculator, weather spray advisories, and 24/7 AI agronomist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-badge">🌱</div>
+        <div class="logo-text">
+          <h1>AgriExpert <span class="badge-ai">AI 2.5</span></h1>
+          <div class="logo-subtitle">Intelligent Digital Agronomist & Farm Companion</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+          <li><a href="#crop-doctor" class="nav-link">Crop Doctor</a></li>
+          <li><a href="#my-crops" class="nav-link">My Crops</a></li>
+          <li><a href="#mandi" class="nav-link">Mandi Prices</a></li>
+          <li><a href="#soil" class="nav-link">Soil Health</a></li>
+          <li><a href="#irrigation" class="nav-link">Irrigation</a></li>
+          <li><a href="#schemes" class="nav-link">Govt Schemes</a></li>
+          <li><a href="#assistant" class="nav-link">AI Assistant</a></li>
+          <li><a href="#community" class="nav-link">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Dark/Light Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <a href="#crop-doctor" class="btn btn-primary">
+          <span>📸 Scan Leaf</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner (Website Marketing & Live Pulse) -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-pill">
+          <span>🌾 Next-Gen Precision Agriculture</span>
+          <span>•</span>
+          <span>Integrated with ICAR & APMC</span>
+        </div>
+        <h1 class="hero-title">
+          Empowering Farmers with <span class="highlight">Artificial Intelligence</span>
+        </h1>
+        <p class="hero-desc">
+          Instant crop disease diagnosis from leaf photos, live APMC mandi commodity prices, scientific NPK fertilizer dosage calculators, micro-climate weather advisories, and 24/7 multilingual agronomy assistance.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#crop-doctor" class="btn btn-primary" style="padding: 12px 24px; font-size: 1rem;">
+            <span>🩺 Launch AI Crop Doctor</span>
+          </a>
+          <a href="#mandi" class="btn btn-secondary" style="padding: 12px 24px; font-size: 1rem;">
+            <span>📈 View Live Mandi Rates</span>
+          </a>
+          <a href="/standalone.html" target="_blank" class="btn btn-secondary" title="Open classic standalone build">
+            <span>📦 Offline Demo Bundle</span>
+          </a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>18,500+</h3>
+            <p>Active Cultivators</p>
+          </div>
+          <div class="stat-item">
+            <h3>96.4%</h3>
+            <p>Diagnostic Accuracy</p>
+          </div>
+          <div class="stat-item">
+            <h3>450+</h3>
+            <p>Mandis Monitored</p>
+          </div>
+          <div class="stat-item">
+            <h3>30%</h3>
+            <p>Water Saved</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-preview-card">
+          <div class="hero-preview-header">
+            <span class="live-badge">
+              <span class="pulse-dot"></span>
+              Live Farm Telemetry
+            </span>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Karnal, Haryana</span>
+          </div>
+
+          <div class="hero-mini-cards">
+            <div class="mini-card">
+              <div class="mini-card-icon">🌦️</div>
+              <div class="mini-card-info">
+                <h4>Weather Window</h4>
+                <p>Ideal for spraying until 11:30 AM</p>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon">🍅</div>
+              <div class="mini-card-info">
+                <h4>Tomato Crop</h4>
+                <p>Stage: Flowering (65%)</p>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon">💧</div>
+              <div class="mini-card-info">
+                <h4>Drip Valve #2</h4>
+                <p>Scheduled: Tomorrow 6:30 AM</p>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon">💰</div>
+              <div class="mini-card-info">
+                <h4>Basmati 1121</h4>
+                <p>₹4,320 / Qtl (+1.8% today)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Web App Section -->
+  <main class="app-wrapper">
+
+    <!-- Navigation Tabs Bar -->
+    <div class="app-nav-tabs">
+      <button class="tab-btn active" data-tab="dashboard">
+        <span>📊</span> Dashboard
+      </button>
+      <button class="tab-btn" data-tab="crop-doctor">
+        <span>🩺</span> AI Crop Doctor <span class="tab-badge">AI</span>
+      </button>
+      <button class="tab-btn" data-tab="my-crops">
+        <span>🌾</span> My Crops
+      </button>
+      <button class="tab-btn" data-tab="mandi">
+        <span>💰</span> Mandi Rates <span class="tab-badge">Live</span>
+      </button>
+      <button class="tab-btn" data-tab="soil">
+        <span>🧪</span> Soil Health Doctor
+      </button>
+      <button class="tab-btn" data-tab="irrigation">
+        <span>💧</span> Smart Irrigation
+      </button>
+      <button class="tab-btn" data-tab="schemes">
+        <span>🏛️</span> Govt Schemes
+      </button>
+      <button class="tab-btn" data-tab="assistant">
+        <span>🤖</span> AI Assistant
+      </button>
+      <button class="tab-btn" data-tab="community">
+        <span>👥</span> Community
+      </button>
+    </div>
+
+    <!-- TAB 1: DASHBOARD -->
+    <section id="dashboard" class="tab-content active">
+      <!-- Live Micro-Weather Banner -->
+      <div id="weatherHeroCard" class="card weather-hero-card">
+        <div style="text-align: center; padding: 30px;">Loading real-time micro-climate telemetry...</div>
+      </div>
+
+      <!-- Quick Action Agronomy Launchpad -->
+      <div class="dashboard-quick-actions" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 24px;">
+        <a href="#crop-doctor" class="quick-action-card" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition-fast); box-shadow: var(--shadow-sm);">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(16, 185, 129, 0.15); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0;">
+            📸
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 2px;">AI Crop Doctor</div>
+            <div style="font-size: 0.76rem; color: var(--text-secondary);">Instant leaf disease scan & remedies</div>
+          </div>
+        </a>
+
+        <a href="#mandi" class="quick-action-card" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition-fast); box-shadow: var(--shadow-sm);">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(59, 130, 246, 0.15); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0;">
+            📈
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 2px;">Live Mandi Rates</div>
+            <div style="font-size: 0.76rem; color: var(--text-secondary);">450+ APMCs real-time price trends</div>
+          </div>
+        </a>
+
+        <a href="#soil" class="quick-action-card" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition-fast); box-shadow: var(--shadow-sm);">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(245, 158, 11, 0.15); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0;">
+            🧪
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 2px;">Soil NPK Doctor</div>
+            <div style="font-size: 0.76rem; color: var(--text-secondary);">Scientific fertilizer dosage calculator</div>
+          </div>
+        </a>
+
+        <a href="#irrigation" class="quick-action-card" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition-fast); box-shadow: var(--shadow-sm);">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(14, 165, 233, 0.15); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0;">
+            💧
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 2px;">Smart Irrigation</div>
+            <div style="font-size: 0.76rem; color: var(--text-secondary);">Moisture schedule & water savings</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Farm Health & Telemetry Pulse Bar -->
+      <div class="card" style="margin-bottom: 24px; padding: 16px 20px; background: var(--bg-surface); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2rem;">🌾</span>
+            <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700;">Farm Vitality & Ecosystem Pulse</h4>
+            <span class="live-badge" style="font-size: 0.72rem; padding: 2px 8px;">All Systems Optimal</span>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Real-time Automated Agronomic Assessment</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
+          <div style="padding: 10px 14px; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 2px;">🌿 Canopy Vigor Index</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">96.4% Healthy</div>
+            <div style="font-size: 0.68rem; color: var(--text-secondary);">Optimal chlorophyll density</div>
+          </div>
+          <div style="padding: 10px 14px; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 2px;">💧 Root-Zone Moisture</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #0ea5e9;">64% Favorable</div>
+            <div style="font-size: 0.68rem; color: var(--text-secondary);">Next irrigation in 18 hrs</div>
+          </div>
+          <div style="padding: 10px 14px; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 2px;">🧪 Soil Nutrient Balance</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #f59e0b;">Class A Optimal</div>
+            <div style="font-size: 0.68rem; color: var(--text-secondary);">NPK balanced for Rice/Tomato</div>
+          </div>
+          <div style="padding: 10px 14px; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 2px;">🛡️ Pest & Pathogen Risk</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">Low Risk (Favorable)</div>
+            <div style="font-size: 0.68rem; color: var(--text-secondary);">Spray window currently open</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Left: Active Crops & Farm Status -->
+        <div>
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">🌾</span>
+                <h3 class="card-title">My Active Fields & Crops</h3>
+              </div>
+              <button class="btn btn-secondary open-add-crop-btn" style="padding: 6px 12px; font-size: 0.85rem;">
+                ➕ Register Crop
+              </button>
+            </div>
+            <div id="dashboardCropsList" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <!-- 5-Day Weather Outlook -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">📅</span>
+                <h3 class="card-title">5-Day Agricultural Spray & Rain Forecast</h3>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" id="weatherCityInput" placeholder="Enter city (e.g. Pune, Ludhiana)" style="padding: 6px 12px; font-size: 0.85rem; width: 200px;">
+                <button id="weatherSearchBtn" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Update</button>
+              </div>
+            </div>
+            <div id="weatherForecastGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px;">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Today's Tasks & Alerts -->
+        <div>
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">✅</span>
+                <h3 class="card-title">Field Care Tasks</h3>
+              </div>
+              <span class="live-badge">Prioritized</span>
+            </div>
+            <div id="dashboardTasksList">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <!-- Quick AI Assistant Teaser -->
+          <div class="card" style="background: linear-gradient(135deg, var(--bg-surface), var(--bg-accent)); border-color: var(--border-highlight);">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <span style="font-size: 2rem;">🤖</span>
+              <div>
+                <h4 style="font-size: 1.05rem;">Ask AgriExpert Anything</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Voice & text agronomist ready 24/7</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">
+              Ask questions on pest infestation, fertilizer timing, subsidy eligibility, or organic sprays.
+            </p>
+            <a href="#assistant" class="btn btn-primary" style="width: 100%;">
+              Open AI Agronomist 💬
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: AI CROP DOCTOR -->
+    <section id="crop-doctor" class="tab-content">
+      <div style="margin-bottom: 24px;">
+        <h2>AI Crop Doctor & Disease Diagnostics</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Upload or drag-and-drop a leaf photo to diagnose diseases, analyze severity, and receive organic and chemical remedies.
+        </p>
+      </div>
+
+      <div class="crop-doctor-container">
+        <!-- Scan Upload Box -->
+        <div>
+          <div id="dropZone" class="scan-box">
+            <input type="file" id="leafFileInput" accept="image/*" style="display: none;">
+            <div id="scanPlaceholder">
+              <div class="scan-icon-large">📸</div>
+              <h3 class="scan-title">Take Photo or Drag & Drop Leaf</h3>
+              <p class="scan-desc">Supports JPG, PNG, WEBP. Ensure leaf spots and veins are in sharp focus.</p>
+              <button type="button" class="btn btn-primary" style="margin-bottom: 6px;">
+                Choose Leaf Photo
+              </button>
+            </div>
+            <img id="scanPreviewImg" class="scan-preview-img" style="display: none;" alt="Leaf Scan Preview">
+          </div>
+
+          <!-- Quick Test Samples -->
+          <div class="sample-selector">
+            <label>⚡ Or try an instant demonstration crop sample:</label>
+            <div class="sample-chips">
+              <button class="sample-chip" data-disease-id="tomato_early_blight" data-crop="Tomato">🍅 Tomato Early Blight</button>
+              <button class="sample-chip" data-disease-id="tomato_late_blight" data-crop="Tomato">🍅 Tomato Late Blight</button>
+              <button class="sample-chip" data-disease-id="wheat_yellow_rust" data-crop="Wheat">🌾 Wheat Yellow Rust</button>
+              <button class="sample-chip" data-disease-id="rice_bacterial_blight" data-crop="Rice">🍚 Rice Bacterial Blight</button>
+              <button class="sample-chip" data-disease-id="cotton_pink_bollworm" data-crop="Cotton">🌿 Cotton Bollworm</button>
+              <button class="sample-chip" data-disease-id="healthy_crop" data-crop="Tomato">✅ Healthy Leaf Scan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diagnosis Result Panel -->
+        <div id="diagnosisResultBox" class="diagnosis-panel">
+          <div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <div style="font-size: 3rem; margin-bottom: 12px; opacity: 0.6;">🌿</div>
+            <h3>Waiting for Leaf Scan</h3>
+            <p style="font-size: 0.9rem; margin-top: 6px;">Upload a photograph from your camera or select a test sample on the left to view comprehensive pathogen classification and prescriptions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: MY CROPS -->
+    <section id="my-crops" class="tab-content">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h2>My Crops & Plot Management</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Track vegetative growth, milestones, irrigation demands, and yield estimates.</p>
+        </div>
+        <button class="btn btn-primary open-add-crop-btn">
+          ➕ Register New Crop
+        </button>
+      </div>
+
+      <div id="myCropsGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 4: MANDI PRICES -->
+    <section id="mandi" class="tab-content">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h2>Live Mandi & APMC Commodity Rates</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Real-time wholesale market arrivals, modal rates, and MSP price differentials.</p>
+        </div>
+        <span id="mandiLastUpdate" class="live-badge">Updated: Today</span>
+      </div>
+
+      <div class="mandi-filter-bar">
+        <div class="search-input-wrap">
+          <span class="search-input-icon">🔍</span>
+          <input type="text" id="mandiSearchInput" placeholder="Search commodity, variety, mandi, or state...">
+        </div>
+
+        <select id="mandiCommodityFilter">
+          <option value="All">All Commodities</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Rice">Rice / Basmati</option>
+          <option value="Tomato">Tomato</option>
+          <option value="Onion">Onion</option>
+          <option value="Potato">Potato</option>
+          <option value="Cotton">Cotton</option>
+          <option value="Soybean">Soybean</option>
+          <option value="Mustard">Mustard</option>
+          <option value="Chilli">Chilli</option>
+          <option value="Maize">Maize</option>
+          <option value="Tur">Tur Dal</option>
+        </select>
+
+        <select id="mandiStateFilter">
+          <option value="All">All States</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </select>
+      </div>
+
+      <div class="mandi-table-container">
+        <table class="mandi-table">
+          <thead>
+            <tr>
+              <th>Commodity & Variety</th>
+              <th>Mandi & State</th>
+              <th>Min - Max Price</th>
+              <th>Modal Price</th>
+              <th>Daily Trend</th>
+              <th>MSP Status</th>
+              <th>Arrivals</th>
+            </tr>
+          </thead>
+          <tbody id="mandiTableBody">
+            <!-- Populated dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TAB 5: SOIL HEALTH DOCTOR -->
+    <section id="soil" class="tab-content">
+      <div style="margin-bottom: 24px;">
+        <h2>Soil Health Doctor & Nutrient Calculator</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">Enter your Soil Health Card test values to calculate exact commercial fertilizer bags and organic amendments.</p>
+      </div>
+
+      <div class="soil-calc-grid">
+        <!-- Input Form -->
+        <div class="card">
+          <h3 style="margin-bottom: 16px;">Soil Test Parameters</h3>
+          <form id="soilCalcForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Target Crop</label>
+                <select name="cropType" required>
+                  <option value="Wheat">Wheat</option>
+                  <option value="Tomato">Tomato</option>
+                  <option value="Rice / Paddy">Rice / Paddy</option>
+                  <option value="Cotton">Cotton</option>
+                  <option value="Potato">Potato</option>
+                  <option value="Maize">Maize</option>
+                  <option value="Sugarcane">Sugarcane</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Field Area (Acres)</label>
+                <input type="number" name="areaAcres" value="3.0" step="0.5" min="0.5" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Soil pH (1 - 14)</label>
+                <input type="number" name="soilPh" value="6.8" step="0.1" min="4" max="10" required>
+              </div>
+              <div class="form-group">
+                <label>Organic Carbon (%)</label>
+                <input type="number" name="soilOc" value="0.65" step="0.05" min="0.1" max="2.5" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Available Nitrogen (kg/ha)</label>
+                <input type="number" name="soilN" value="280" min="50" max="800" required>
+              </div>
+              <div class="form-group">
+                <label>Available Phosphorus (kg/ha)</label>
+                <input type="number" name="soilP" value="28" min="5" max="120" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Available Potassium (kg/ha)</label>
+              <input type="number" name="soilK" value="240" min="50" max="600" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+              🧪 Calculate Fertilizer Bags
+            </button>
+          </form>
+        </div>
+
+        <!-- Output Prescription Card -->
+        <div id="soilPrescriptionCard" class="card">
+          <div style="text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <div style="font-size: 3rem; margin-bottom: 12px; opacity: 0.6;">🧪</div>
+            <h3>Ready for Soil Analysis</h3>
+            <p style="font-size: 0.9rem; margin-top: 6px;">Submit your soil values on the left to receive commercial bag recommendations for Urea, DAP, MOP, and organic manure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: SMART IRRIGATION -->
+    <section id="irrigation" class="tab-content">
+      <div style="margin-bottom: 24px;">
+        <h2>Smart Irrigation & Soil Moisture Management</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">Weather-synchronized automated watering schedules and water conservation metrics.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <div class="card" style="padding: 16px;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Average Soil Moisture</span>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary-600); margin: 4px 0;">66%</div>
+          <span style="font-size: 0.75rem; color: var(--success-500);">Optimal for Active Absorption</span>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Water Saved This Month</span>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--sky-600); margin: 4px 0;">142,000 L</div>
+          <span style="font-size: 0.75rem; color: var(--sky-600);">Using Rain-Delay Algorithm</span>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Evapotranspiration (ET0)</span>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--amber-600); margin: 4px 0;">4.2 mm/day</div>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Mild crop water loss</span>
+        </div>
+      </div>
+
+      <h3 style="margin-bottom: 16px;">Active Irrigation Schedules</h3>
+      <div id="irrigationScheduleList">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 7: GOVT SCHEMES -->
+    <section id="schemes" class="tab-content">
+      <div style="margin-bottom: 20px;">
+        <h2>Government Agricultural Schemes & Subsidies</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">Explore Central and State government welfare programs, credit subsidies, and direct benefit transfers.</p>
+      </div>
+
+      <div class="mandi-filter-bar">
+        <div class="search-input-wrap">
+          <span class="search-input-icon">🔍</span>
+          <input type="text" id="schemesSearchInput" placeholder="Search schemes (e.g. solar, insurance, kisan credit)...">
+        </div>
+        <select id="schemesCategoryFilter">
+          <option value="All">All Categories</option>
+          <option value="Direct Income">Direct Income Support</option>
+          <option value="Insurance">Crop Insurance</option>
+          <option value="Irrigation">Irrigation & Solar</option>
+          <option value="Credit">Low-Interest Credit</option>
+          <option value="Machinery">Farm Machinery</option>
+        </select>
+      </div>
+
+      <div id="schemesGrid" class="schemes-grid">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 8: AI ASSISTANT -->
+    <section id="assistant" class="tab-content">
+      <div style="margin-bottom: 20px;">
+        <h2>AgriExpert AI — 24/7 Digital Agronomist</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">Multi-turn conversational assistant with voice narration and speech recognition.</p>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <div class="chat-avatar">🌱</div>
+            <div>
+              <h4 style="color: #fff;">AgriExpert Companion</h4>
+              <span style="font-size: 0.75rem; opacity: 0.85;">● Online • Powered by Agricultural LLM</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <select id="assistantLangSelect" style="background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; font-size: 0.8rem;">
+              <option value="en" style="color: #000;">English (IN)</option>
+              <option value="hi" style="color: #000;">हिन्दी (Hindi)</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+          <div class="message-row bot">
+            <div class="chat-avatar">🌱</div>
+            <div>
+              <div class="msg-bubble">
+                Namaste farmer! I am your <strong>AgriExpert AI Agronomist</strong>.<br><br>
+                How can I assist your fields today? You can ask about crop diseases, pest remedies, fertilizer dosage per acre, mandi rates, or government subsidies.
+              </div>
+              <div class="msg-time">Just now</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="chatChipsContainer" class="chat-chips-row">
+          <div class="chat-chip">Tomato leaf yellowing diagnostic</div>
+          <div class="chat-chip">Urea and DAP application timing</div>
+          <div class="chat-chip">PM-KUSUM Solar pump subsidy</div>
+          <div class="chat-chip">Jeevamrutha organic preparation</div>
+          <div class="chat-chip">Basmati rice price trend</div>
+        </div>
+
+        <div class="chat-input-bar">
+          <button id="chatVoiceBtn" class="btn btn-secondary" title="Voice Input (Microphone)" style="width: 44px; height: 44px; padding: 0;">
+            🎤
+          </button>
+          <input type="text" id="chatInput" placeholder="Ask your agricultural question here...">
+          <button id="chatSendBtn" class="btn-send" title="Send Question">
+            ➤
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 9: COMMUNITY -->
+    <section id="community" class="tab-content">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h2>Farmer Knowledge Community & Q&A</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Connect with progressive farmers and ICAR certified agronomists.</p>
+        </div>
+        <button id="openAskCommunityBtn" class="btn btn-primary">
+          ✍️ Ask a Question
+        </button>
+      </div>
+
+      <div id="communityPostsFeed" style="max-width: 900px;">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Global AI Chatbot Launcher -->
+  <div class="floating-ai-launcher" id="floatingAiLauncher" title="Chat with AgriExpert AI Agronomist">
+    <div class="launcher-pulse"></div>
+    <span class="launcher-icon">🤖</span>
+    <span class="launcher-label">Ask AgriExpert AI</span>
+    <span class="launcher-badge">Online</span>
+  </div>
+
+  <!-- Floating AI Chatbot Drawer -->
+  <div class="floating-chat-drawer" id="floatingChatDrawer">
+    <div class="chat-drawer-header">
+      <div class="drawer-header-title">
+        <span class="drawer-avatar">🌱</span>
+        <div>
+          <h4>AgriExpert AI Agronomist</h4>
+          <span class="drawer-status">● Understands your crop & field needs</span>
+        </div>
+      </div>
+      <div class="drawer-header-actions">
+        <select id="drawerLangSelect" class="lang-mini-select">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="closeDrawerBtn" class="drawer-action-btn" title="Close Drawer">&times;</button>
+      </div>
+    </div>
+
+    <div id="drawerMessages" class="chat-messages drawer-messages-body">
+      <div class="message-row bot">
+        <div class="chat-avatar">🌱</div>
+        <div>
+          <div class="msg-bubble">
+            🌾 Namaste farmer! I am your <strong>AgriExpert AI Agronomist</strong>.<br><br>
+            I'm here to understand your exact field needs. How can I assist you right now?
+          </div>
+          <div class="msg-time">Just now</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="drawerChipsContainer" class="chat-chips-row">
+      <div class="chat-chip">🍅 Diagnose crop disease</div>
+      <div class="chat-chip">🧪 Fertilizer dosage per acre</div>
+      <div class="chat-chip">💰 Today's live mandi prices</div>
+      <div class="chat-chip">☀️ Solar pump subsidy</div>
+      <div class="chat-chip">🌦️ Spray weather window</div>
+    </div>
+
+    <div class="chat-input-bar drawer-input-bar">
+      <button id="drawerVoiceBtn" class="btn btn-secondary" title="Voice Input (Microphone)" style="width: 40px; height: 40px; padding: 0;">
+        🎤
+      </button>
+      <input type="text" id="drawerChatInput" placeholder="Ask anything about your crops...">
+      <button id="drawerSendBtn" class="btn-send" title="Send Question" style="width: 40px; height: 40px;">
+        ➤
+      </button>
+    </div>
+  </div>
+
+  <!-- Add Crop Modal -->
+  <div id="addCropModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Register New Crop to Farm</h3>
+        <button id="closeAddCropBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <form id="addCropForm">
+        <div class="form-group">
+          <label>Crop & Variety Name</label>
+          <input type="text" name="cropName" placeholder="e.g. Wheat (DBW-187)" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Crop Category</label>
+            <select name="cropType">
+              <option value="Cereal Grain">Cereal Grain</option>
+              <option value="Vegetable">Vegetable</option>
+              <option value="Pulse / Legume">Pulse / Legume</option>
+              <option value="Oilseed">Oilseed</option>
+              <option value="Cash Crop / Fiber">Cash Crop / Fiber</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Field Area (Acres)</label>
+            <input type="number" name="cropArea" value="2.0" step="0.5" min="0.1" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Current Growth Stage</label>
+            <select name="cropStage">
+              <option value="Germination & Emergence">Germination & Emergence</option>
+              <option value="Vegetative & Tillering">Vegetative & Tillering</option>
+              <option value="Flowering / Panicle Initiation">Flowering / Panicle Initiation</option>
+              <option value="Fruiting & Grain Filling">Fruiting & Grain Filling</option>
+              <option value="Maturity & Pre-Harvest">Maturity & Pre-Harvest</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Expected Yield (Quintals)</label>
+            <input type="number" name="cropYield" value="40" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Save Crop to Farm Profile
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Ask Community Modal -->
+  <div id="askCommunityModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Ask the Farmer Community</h3>
+        <button id="closeAskCommunityBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <form id="askCommunityForm">
+        <div class="form-group">
+          <label>Question Title</label>
+          <input type="text" name="postTitle" placeholder="e.g. Best fungicide for late blight on potato?" required>
+        </div>
+        <div class="form-group">
+          <label>Details & Crop Observation</label>
+          <textarea name="postContent" rows="4" placeholder="Describe symptoms, soil condition, or variety details..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Post Question to Community
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="logo-group" style="margin-bottom: 14px;">
+          <div class="logo-badge" style="width: 36px; height: 36px; font-size: 1.2rem;">🌱</div>
+          <h3 style="font-size: 1.15rem;">AgriExpert AI</h3>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; max-width: 340px;">
+          A full-stack agricultural intelligence platform integrating computer vision disease diagnostics, APMC wholesale pricing, micro-weather advisories, and scientific nutrient calculation for Indian farmers.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Core Modules</h4>
+        <ul class="footer-links">
+          <li><a href="#crop-doctor">AI Leaf Doctor</a></li>
+          <li><a href="#mandi">Mandi Live Rates</a></li>
+          <li><a href="#soil">Soil Health Prescriptions</a></li>
+          <li><a href="#irrigation">Smart Irrigation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Farmer Support</h4>
+        <ul class="footer-links">
+          <li><a href="#schemes">Government Subsidies</a></li>
+          <li><a href="#assistant">AI Agronomist Voice</a></li>
+          <li><a href="#community">Farmer Q&A Forum</a></li>
+          <li><a href="/standalone.html" target="_blank">Offline Demo File</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Extension Helplines</h4>
+        <ul class="footer-links">
+          <li><a href="tel:18001801551">📞 Kisan Call Centre: 1800-180-1551</a></li>
+          <li><a href="https://icar.org.in" target="_blank" rel="noopener">ICAR Agricultural Portal</a></li>
+          <li><a href="https://pmkisan.gov.in" target="_blank" rel="noopener">PM-KISAN DBT Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="signature-line-card" id="creatorSignatureBadge" title="Crafted with passion by Kala Varun Teja 🌾">
+        <div class="signature-header-row">
+          <span class="signature-icon">🌿</span>
+          <span class="signature-prefix">Made by</span>
+          <span class="signature-name-text">KALA VARUN TEJA</span>
+          <span class="signature-sparkle">✨</span>
+        </div>
+        <div class="signature-arrival-line"></div>
+      </div>
+      <p>© 2026 AgriExpert AI. Precision Agronomy Platform.</p>
+    </div>
+  </footer>
+
+  <!-- Main ES6 Application Controller -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

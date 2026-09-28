@@ -1,0 +1,123 @@
+[
+  {
+    "id": "tomato_early_blight",
+    "crop": "Tomato",
+    "disease": "Early Blight (Alternaria solani)",
+    "severity": "Moderate",
+    "symptoms": "Dark brown concentric rings (target-like spots) on older leaves, yellow halo around lesions, stem cankers, lower leaf drop.",
+    "cause": "Fungal pathogen thriving in warm temperatures (24-29°C) and heavy dew or rain.",
+    "organicRemedy": "Spray Neem oil (5ml/L) or copper oxychloride 50 WP (2.5g/L). Apply Trichoderma viride (10g/L) to soil and foliage. Remove affected lower leaves.",
+    "chemicalTreatment": "Mancozeb 75 WP (2g/L) or Chlorothalonil 75 WP (2g/L) or Azoxystrobin 23 SC (1ml/L). Repeat at 10-14 day intervals.",
+    "preventiveMeasures": "Practice 3-year crop rotation, stake tomato plants to improve air circulation, avoid overhead sprinkler irrigation, use disease-free certified seeds."
+  },
+  {
+    "id": "tomato_late_blight",
+    "crop": "Tomato",
+    "disease": "Late Blight (Phytophthora infestans)",
+    "severity": "Critical",
+    "symptoms": "Water-soaked dark lesions on leaf tips, white fungal growth on underside in humid mornings, rapid browning and collapse of foliage, brown blotches on fruit.",
+    "cause": "Oomycete pathogen favored by cool, foggy/wet weather (15-22°C with >90% humidity).",
+    "organicRemedy": "Bordeaux mixture (1%), copper hydroxide spray. Immediate destruction of severely infected plants. Compost tea foliar spray.",
+    "chemicalTreatment": "Metalaxyl 8% + Mancozeb 64% WP (2.5g/L) or Cymoxanil 8% + Mancozeb 64% WP (3g/L) or Dimethomorph (1g/L).",
+    "preventiveMeasures": "Monitor local weather forecasts for blight warnings, plant resistant hybrids (e.g. Arka Rakshak), ensure rapid field drainage."
+  },
+  {
+    "id": "tomato_leaf_curl",
+    "crop": "Tomato",
+    "disease": "Tomato Leaf Curl Virus (ToLCV)",
+    "severity": "High",
+    "symptoms": "Upward curling, puckering, thickening of leaves, stunting of plants, yellowing between veins, drastically reduced fruit set.",
+    "cause": "Geminivirus transmitted primarily by Whitefly (Bemisia tabaci).",
+    "organicRemedy": "Install yellow sticky traps (15-20 per acre) to trap whiteflies. Spray Neem seed kernel extract (NSKE 5%) or Verticillium lecanii (5g/L).",
+    "chemicalTreatment": "Control vector with Imidacloprid 17.8 SL (0.5ml/L) or Diafenthiuron 50 WP (1g/L) or Spiromesifen 22.9 SC (1ml/L).",
+    "preventiveMeasures": "Grow barrier crops like maize/sorghum on border, use 40-mesh insect netting in nursery, remove weed hosts around field."
+  },
+  {
+    "id": "wheat_yellow_rust",
+    "crop": "Wheat",
+    "disease": "Stripe / Yellow Rust (Puccinia striiformis)",
+    "severity": "Critical",
+    "symptoms": "Yellowish-orange pustules arranged in parallel linear stripes on leaf blades, powdery yellow spores rub off on fingers.",
+    "cause": "Fungal spore dispersal during cool humid winters (10-15°C with heavy dew).",
+    "organicRemedy": "Early morning spray of bio-fungicide Bacillus subtilis or sour buttermilk spray (50ml/L).",
+    "chemicalTreatment": "Propiconazole 25 EC (1ml/L) or Tebuconazole 25.9 EC (1ml/L) spray as soon as first stripe appears. Spray 200L solution/acre.",
+    "preventiveMeasures": "Sow rust-resistant varieties like DBW-187, DBW-303, HD-3226; avoid excessive nitrogen fertilization; timely sowing before Nov 20."
+  },
+  {
+    "id": "rice_bacterial_blight",
+    "crop": "Rice / Paddy",
+    "disease": "Bacterial Leaf Blight (Xanthomonas oryzae)",
+    "severity": "High",
+    "symptoms": "Water-soaked stripes along leaf margins turning yellow-white with wavy margins, milky bacterial ooze beads on young lesions in morning.",
+    "cause": "Bacterium entering through hydathodes/wounds, aggravated by heavy rain, high winds, and excess urea application.",
+    "organicRemedy": "Spray fresh cow dung filtrate (20%) or Pseudomonas fluorescens (5g/L) twice at 15-day interval.",
+    "chemicalTreatment": "Copper oxychloride (2.5g/L) mixed with Streptocycline (0.1g/L) or Plantomycin (1g/L).",
+    "preventiveMeasures": "Drain standing water temporarily, balance nitrogen with higher potassium (MOP), avoid clipping seedling tips during transplanting."
+  },
+  {
+    "id": "rice_blast",
+    "crop": "Rice / Paddy",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "Critical",
+    "symptoms": "Spindle-shaped elliptical lesions with gray/white center and brown/reddish borders on leaf blades, neck rot causing white empty panicles.",
+    "cause": "Favored by night temperatures around 20°C, high humidity (>90%), and prolonged leaf wetness.",
+    "organicRemedy": "Foliar spray of Trichoderma harzianum or Panchagavya (30ml/L).",
+    "chemicalTreatment": "Tricyclazole 75 WP (0.6g/L) or Isoprothiolane 40 EC (1.5ml/L) or Kasugamycin 3% SL (2ml/L).",
+    "preventiveMeasures": "Treat seeds with Carbendazim (2g/kg), split nitrogen fertilizer into 3-4 doses, maintain proper plant spacing."
+  },
+  {
+    "id": "cotton_pink_bollworm",
+    "crop": "Cotton",
+    "disease": "Pink Bollworm (Pectinophora gossypiella)",
+    "severity": "Critical",
+    "symptoms": "Rosetted flowers, double seeds, internal feeding in developing bolls, stained lint, premature boll opening.",
+    "cause": "Nocturnal moth larvae boring into floral buds and developing bolls.",
+    "organicRemedy": "Install pheromone traps (5-8 traps/acre) for monitoring, release Trichogramma egg parasitoids (60,000/acre), neem oil spray.",
+    "chemicalTreatment": "Profenofos 50 EC (2ml/L) or Emamectin Benzoate 5 SG (0.5g/L) or Chlorantraniliprole 18.5 SC (0.3ml/L).",
+    "preventiveMeasures": "Synchronized planting, terminate crop by January, avoid ratoon cotton, deep summer ploughing to expose pupae."
+  },
+  {
+    "id": "potato_black_scurf",
+    "crop": "Potato",
+    "disease": "Black Scurf (Rhizoctonia solani)",
+    "severity": "Moderate",
+    "symptoms": "Hard, black irregular sclerotia adhering tightly to tuber skin (dirt that won't wash off), stem cankers, aerial tubers.",
+    "cause": "Soil-borne and seed-borne fungus favored by cool, wet soils at planting.",
+    "organicRemedy": "Seed tuber dip in Trichoderma viride (10g/L water) for 30 minutes before sowing. Apply neem cake (100kg/acre) in soil.",
+    "chemicalTreatment": "Tuber treatment with Moncut / Flutolanil (2ml/kg) or Pencycuron (2.5ml/kg) or Azoxystrobin (2.5ml/kg) prior to cold storage or planting.",
+    "preventiveMeasures": "Plant certified seed tubers, practice green manuring with dhaincha, allow tubers to mature and skin to harden before harvest."
+  },
+  {
+    "id": "chilli_anthracnose",
+    "crop": "Chilli / Pepper",
+    "disease": "Anthracnose / Fruit Rot (Colletotrichum capsici)",
+    "severity": "High",
+    "symptoms": "Circular sunken spots on ripe fruits with concentric rings of black acervuli, straw-colored shriveled dried fruits, dieback of twigs.",
+    "cause": "Fungal infection during humid rainy weather and high temperatures (28-30°C).",
+    "organicRemedy": "Spray cow urine (10%) fermented with neem leaves or Pseudomonas fluorescens (10g/L).",
+    "chemicalTreatment": "Azoxystrobin 18.2% + Difenoconazole 11.4% SC (1ml/L) or Captan 50 WP (2.5g/L) or Tebuconazole 25.9 EC (1ml/L).",
+    "preventiveMeasures": "Seed treatment with Thiram (3g/kg), collect and burn diseased fruits, avoid excessive shade in nursery."
+  },
+  {
+    "id": "corn_fall_armyworm",
+    "crop": "Maize / Corn",
+    "disease": "Fall Armyworm (Spodoptera frugiperda)",
+    "severity": "Critical",
+    "symptoms": "Window-pane leaf skeletonization, pinholes in young whorls, heavy sawdust-like frass inside whorls, ragged leaf edges.",
+    "cause": "Invasive pest larvae feeding aggressively in the central funnel of the plant.",
+    "organicRemedy": "Application of sand + wood ash (9:1) into whorls, Metarhizium rileyi or Beauveria bassiana (5g/L) spray, pheromone traps.",
+    "chemicalTreatment": "Chlorantraniliprole 18.5 SC (0.4ml/L) or Spinetoram 11.7 SC (0.5ml/L) directed straight into whorls using knapsack sprayer.",
+    "preventiveMeasures": "Deep summer tillage, intercropping with pulses (cowpea/pigeon pea), push-pull technology with Napier grass."
+  },
+  {
+    "id": "healthy_crop",
+    "crop": "General",
+    "disease": "Healthy Plant (No Disease Detected)",
+    "severity": "Healthy",
+    "symptoms": "Vibrant green uniform pigmentation, clean leaf margins, robust turgor pressure, active vegetative growth, no signs of pathogen damage.",
+    "cause": "Optimal soil moisture, balanced nutrition, and active photosynthesis.",
+    "organicRemedy": "Maintain preventative health with Seaweed extract (2ml/L) or Jeevamrutha foliar spray every 15 days.",
+    "chemicalTreatment": "No chemical application required. Continue regular scouting and balanced micronutrient spray.",
+    "preventiveMeasures": "Follow integrated pest and disease management (IPM), maintain balanced drip fertigation schedule."
+  }
+]

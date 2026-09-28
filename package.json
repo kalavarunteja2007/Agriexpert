@@ -1,0 +1,27 @@
+{
+  "name": "agriexpert-ai",
+  "version": "2.5.0",
+  "description": "AgriExpert AI — Intelligent Farm Companion & Digital Agronomy Full-Stack Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "agriculture",
+    "farming",
+    "ai",
+    "crop-disease",
+    "mandi-prices",
+    "soil-health",
+    "precision-farming"
+  ],
+  "author": "AgriExpert AI Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

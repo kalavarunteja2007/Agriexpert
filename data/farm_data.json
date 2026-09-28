@@ -1,0 +1,160 @@
+{
+  "profile": {
+    "farmerName": "Ramesh Kumar Sharma",
+    "farmName": "Green Valley Organic Farm",
+    "location": "Karnal, Haryana, India",
+    "totalAcres": 12.5,
+    "soilType": "Alluvial Loam",
+    "irrigationType": "Drip + Solar Tube Well",
+    "waterSource": "Tube Well & Farm Pond",
+    "preferredLanguage": "en"
+  },
+  "crops": [
+    {
+      "id": "crop_1",
+      "name": "Tomato (Hybrid Arka Rakshak)",
+      "cropType": "Vegetable",
+      "sownDate": "2026-08-15",
+      "areaAcres": 3,
+      "stage": "Flowering & Early Fruiting",
+      "stagePercent": 65,
+      "healthScore": 92,
+      "waterStatus": "Optimal (68% Soil Moisture)",
+      "estimatedHarvest": "2026-11-05",
+      "expectedYieldQuintal": 120,
+      "notes": "Staking completed. Regular neem spray every 10 days. Monitoring for whitefly."
+    },
+    {
+      "id": "crop_2",
+      "name": "Basmati Rice (Pusa 1121)",
+      "cropType": "Cereal Grain",
+      "sownDate": "2026-07-02",
+      "areaAcres": 5.5,
+      "stage": "Panicle Initiation / Heading",
+      "stagePercent": 82,
+      "healthScore": 88,
+      "waterStatus": "Moist (Standing water 2-3 cm)",
+      "estimatedHarvest": "2026-10-25",
+      "expectedYieldQuintal": 110,
+      "notes": "Applied second split of Potassium. Trichoderma applied during puddling."
+    },
+    {
+      "id": "crop_3",
+      "name": "Wheat (HD-2967 Planned)",
+      "cropType": "Rabi Cereal",
+      "sownDate": "2026-11-10",
+      "areaAcres": 4,
+      "stage": "Seedbed Preparation & Pre-Sowing",
+      "stagePercent": 10,
+      "healthScore": 100,
+      "waterStatus": "Pre-irrigation planned",
+      "estimatedHarvest": "2027-04-12",
+      "expectedYieldQuintal": 95,
+      "notes": "Soil solarization done. Certified seed arranged from NSC."
+    }
+  ],
+  "soilReport": {
+    "sampleDate": "2026-09-28",
+    "ph": 6.8,
+    "organicCarbon": 0.6,
+    "nitrogenValue": 250,
+    "phosphorusValue": 20,
+    "potassiumValue": 200,
+    "nitrogen": "Low",
+    "phosphorus": "Medium",
+    "potassium": "Medium",
+    "recommendations": "Soil pH is well balanced. Micronutrient availability is high."
+  },
+  "irrigationSchedule": [
+    {
+      "id": "irri_1",
+      "crop": "Tomato (Hybrid Arka Rakshak)",
+      "plot": "Plot A (3.0 Acres)",
+      "method": "Drip Irrigation",
+      "nextRun": "Tomorrow, 06:30 AM",
+      "durationMinutes": 45,
+      "waterVolumeLitres": 18000,
+      "status": "Scheduled"
+    },
+    {
+      "id": "irri_2",
+      "crop": "Basmati Rice (Pusa 1121)",
+      "plot": "Plot B (5.5 Acres)",
+      "method": "Alternate Wetting & Drying (AWD)",
+      "nextRun": "In 3 Days, 07:00 AM",
+      "durationMinutes": 120,
+      "waterVolumeLitres": 65000,
+      "status": "Awaiting Soil Moisture Drop"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_1",
+      "title": "Foliar spray of Micronutrient Mix on Tomato",
+      "due": "Today",
+      "priority": "High",
+      "completed": false,
+      "crop": "Tomato"
+    },
+    {
+      "id": "task_2",
+      "title": "Inspect rice bunds for rodent burrows",
+      "due": "Tomorrow",
+      "priority": "Medium",
+      "completed": false,
+      "crop": "Basmati Rice"
+    },
+    {
+      "id": "task_3",
+      "title": "Pheromone trap lure replacement (Helicoverpa)",
+      "due": "In 4 Days",
+      "priority": "Medium",
+      "completed": true,
+      "crop": "Tomato"
+    },
+    {
+      "id": "task_4",
+      "title": "Soil moisture check before Tuesday rain",
+      "due": "In 5 Days",
+      "priority": "Low",
+      "completed": false,
+      "crop": "All Plots"
+    }
+  ],
+  "communityPosts": [
+    {
+      "id": "post_1",
+      "author": "Sukhwinder Singh",
+      "location": "Amritsar, Punjab",
+      "title": "Yellow stripe observed on early wheat nursery - how to verify?",
+      "content": "Saw faint yellowish lines on leaf tips this morning. Is it stripe rust or just zinc deficiency due to cold water?",
+      "likes": 14,
+      "answersCount": 3,
+      "timeAgo": "2 hours ago",
+      "badge": "Experienced Farmer",
+      "verifiedAnswer": "Rub the leaf with a white tissue paper. If a powdery yellow stain comes off on the paper, it is Yellow Rust (Puccinia striiformis). Spray Propiconazole 25 EC @ 1ml/L immediately."
+    },
+    {
+      "id": "post_2",
+      "author": "Dr. Ananya Patil",
+      "location": "ICAR Agronomist, Pune",
+      "title": "Advisory: High humidity alert for Tomato & Chilli growers in Western region",
+      "content": "Due to prevailing dew formation and cloudy weather, early blight and powdery mildew risk is critical. Ensure staking and spray Bacillus subtilis or Mancozeb as prophylactic.",
+      "likes": 42,
+      "answersCount": 8,
+      "timeAgo": "5 hours ago",
+      "badge": "Certified Agronomist"
+    },
+    {
+      "id": "post_3",
+      "author": "Balwant Reddy",
+      "location": "Warangal, Telangana",
+      "title": "Success with Solar Drip Irrigation under PMKSY subsidy",
+      "content": "Got 55% subsidy credited last week for my 5 HP solar pump. Power cuts no longer affect my cotton drip cycles. Happy to share application tips!",
+      "likes": 31,
+      "answersCount": 12,
+      "timeAgo": "1 day ago",
+      "badge": "Community Leader"
+    }
+  ]
+}
